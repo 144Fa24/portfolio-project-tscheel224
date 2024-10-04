@@ -1,0 +1,117 @@
+/* 
+Student Name: Taylor Scheel
+Current Date: 10/2/2024
+File Name: style.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h4 {
+    margin: 0; 
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #040c0e;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+header h1 {
+    font-style: italic;
+    float: left;
+    width: 20%
+}
+
+header h2 {
+    font-style: italic;
+    float: center;
+}
+
+header h4 {
+    font-style: italic;
+    float: center;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #a4978e;
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block; 
+    color: #fff; 
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #525b56;
+    font-family: Verdana, Arial, sans-serif;
+    float: right;
+}
+
+main p {
+    font-size: 1em;
+}
+
+.action {
+    font-size: 1.75em;
+    color: #843664;
+    font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #bfd8ec;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.map {
+    border: 8px solid #f5edd4;
+}
+
+/* Styles for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #525b56;
+    text-decoration: none;
+}
