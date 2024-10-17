@@ -5,7 +5,7 @@ File Name: style.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h2, h4 {
+body, header, nav, main, footer, img, h1, h2, h4, ul {
     margin: 0; 
     padding: 0;
     border: 0;
@@ -21,11 +21,19 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
 /* Style rules for header content */
 header {
-    text-align: center;
-    font-size: 2em;
+   position: -webkit-sticky;
+    position: sticky;
     color: #fff;
+     text-align: center;
+    font-size: 2em;
+}
+
+header img {
+    margin: 0 auto;
 }
 
 header h1 {
@@ -46,27 +54,31 @@ header h4 {
 
 /* Style rules for navigation area */
 nav {
+    padding: 5%;
+    margin-bottom: 1%;
     background-color: #a4978e;
     width: 70%;
     float: right;
-    margin: 5em 3em 0 0;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
     font-size: 2em;
+    font-family: "Merriweather", serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
 }
 
 nav li a {
     display: block; 
     color: #fff; 
-    text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
 }
@@ -75,7 +87,7 @@ nav li a {
 main {
     padding: 2%;
     background-color: #525b56;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     float: right;
 }
 
@@ -89,11 +101,24 @@ main p {
     font-weight: bold;
 }
 
+.round {
+    border-radius: 8px;
+}
+
+/* Show mobile content, hide tablet-desktop content */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
 #contact {
     text-align: center;
 }
 
-#contact a {
+#contact .contact-email-link {
     color: #bfd8ec;
     text-decoration: none;
     font-weight: bold;
@@ -102,6 +127,8 @@ main p {
 
 .map {
     border: 8px solid #f5edd4;
+    width: 95%;
+    height: 50%;
 }
 
 /* Styles for footer content */
